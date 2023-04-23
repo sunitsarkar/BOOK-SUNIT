@@ -1,0 +1,28 @@
+#register{
+    min-height: 625px;
+    display: flex;
+    background-color: rgb(0, 255, 221);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#reg-box{
+    height: 400px;
+    width: 400px;
+    background-color: white;
+}
+
+.reg-in{
+    text-align: center;
+    height: 25px;
+    width: 20em;
+}
+#mem-log{
+    color: red;
+}
+#reg-btn{
+    width: 20em;
+    height: 30px;
+    background-color: rgb(12, 149, 228);
+}

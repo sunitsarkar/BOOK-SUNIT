@@ -1,0 +1,36 @@
+.books{
+    background-color: rgba(0, 0, 0, 0.397);
+    color: white;
+    min-height: 650px;
+}
+
+#book-btn{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.book-btn{
+    color: rgb(224, 224, 18);
+    height: 30px;
+    width: 10em;
+    border: 1px rgb(216, 248, 33);
+}
+.book-in{
+    width: 30em;
+    height: 40px;
+    border-radius: 5px;
+}
+#sub-btn{
+    width: 30em;
+    height: 40px;
+    border-radius: 5px;
+}
+.bo{
+    border: 2px solid red;
+    height: 200px;
+    width: 100px;
+
+}
+#book-container{
+    display: flex;
+}

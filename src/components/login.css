@@ -1,0 +1,35 @@
+#login{
+    min-height: 625px;
+    display: flex;
+    background-color: rgb(207, 48, 48);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#login-box{
+    height: 400px;
+    width: 400px;
+    background-color: white;
+}
+
+.log-in{
+    text-align: center;
+    height: 25px;
+    width: 20em;
+}
+
+#log-btn{
+    width: 20em;
+    height: 30px;
+    background-color: rgb(12, 149, 228);
+}
+
+#forgot{
+    color: red;
+}
+#new{
+    width: 15em;
+    height: 30px;
+    background-color: rgb(12, 149, 228);
+}
