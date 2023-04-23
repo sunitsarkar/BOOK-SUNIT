@@ -9,7 +9,7 @@ export default function Login(){
     const navigate=useNavigate();
     const [name,setName]=useState('');
     const [password,setPassword]=useState('');
-    const url="http://localhost:8000/login"
+    const url="https://book-backend-qvks.onrender.com/login"
 
     const login=()=>{
           axios.post(url,{

@@ -16,7 +16,7 @@ export default function Book() {
     const [arr,setArr]=useState();
     const [de,setDe]=useState('')
 
-    const url="http://localhost:8000";
+    const url="https://book-backend-qvks.onrender.com";
 
     axios.get(url+'/books').then((res)=>{
         setArr(res.data)
