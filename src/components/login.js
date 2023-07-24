@@ -9,19 +9,21 @@ export default function Login(){
     const navigate=useNavigate();
     const [name,setName]=useState('');
     const [password,setPassword]=useState('');
-    const url="https://book-backend-qvks.onrender.com/login"
+    const url="http://localhost:8000/login"
 
     const login=()=>{
           axios.post(url,{
             "username":name,
             "password":password
           }).then((res)=>{
-            console.log(res);
-            navigate('/books')
+            if(res.status === 200){
+              navigate('/books')
+            }
+            else {
+              alert('invalid credential')
+            }
           });
     }
-
-
 
     return <div id="login">
 

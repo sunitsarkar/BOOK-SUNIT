@@ -1,11 +1,9 @@
 import React, { useState } from "react";
 import './books.css';
 import axios from "axios";
-import { useNavigate } from "react-router";
-
 
 export default function Book() {
-    const navigate=useNavigate()
+
     const [add, setAdd] = useState(0);
     const [title,setTitle]=useState('');
     const [ISBN,setISBN]=useState('');
@@ -16,12 +14,12 @@ export default function Book() {
     const [arr,setArr]=useState();
     const [de,setDe]=useState('')
 
-    const url="https://book-backend-qvks.onrender.com";
+    const url="http://localhost:8000";
 
     axios.get(url+'/books').then((res)=>{
         setArr(res.data)
     });
-    console.log(arr)
+    // console.log(arr)
 
     const submit=()=>{
         axios.post(url+'/create',{

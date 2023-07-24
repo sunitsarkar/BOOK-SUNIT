@@ -13,7 +13,7 @@ export default function Signup() {
   const [password,setPassword]=useState('');
   const [cpassword,setcPassword]=useState('');
 
-  const url="https://book-backend-qvks.onrender.com/user"
+  const url="http://localhost:8000"
 
   const signup= ()=>{
     if(password === cpassword && password && name){
